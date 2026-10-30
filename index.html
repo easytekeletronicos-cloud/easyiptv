@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="Conheça a EasyIptv: entretenimento com canais ao vivo, filmes e séries em uma só plataforma. Fale pelo WhatsApp para saber mais.">
+  <meta name="keywords" content="EasyIptv, IPTV, canais ao vivo, filmes, séries, entretenimento, programação online">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="EasyIptv">
+  <meta property="og:title" content="EasyIptv | Canais ao vivo, filmes e séries">
+  <meta property="og:description" content="Entretenimento com canais ao vivo, filmes e séries em uma só plataforma. Fale pelo WhatsApp para saber mais.">
+  <title>EasyIptv | IPTV, canais ao vivo, filmes e séries</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      color-scheme: dark;
+      --background: #071426;
+      --surface: #0d1e34;
+      --gold: #66b8ff;
+      --gold-light: #a8d7ff;
+      --text: #f2f7ff;
+      --muted: #a9bad0;
+      --whatsapp: #20c968;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      min-width: 320px;
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: "DM Sans", sans-serif;
+    }
+
+    .announcement {
+      padding: 11px 20px;
+      border-bottom: 1px solid rgba(102, 184, 255, .16);
+      background: #0b1b30;
+      color: var(--gold-light);
+      font-size: .86rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .announcement a {
+      color: inherit;
+      text-underline-offset: 3px;
+    }
+
+    .brand {
+      display: flex;
+      width: fit-content;
+      align-items: center;
+      gap: 12px;
+      margin: 0 auto;
+      padding: 26px 20px 0;
+      color: var(--text);
+      font-size: 1.15rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 38px;
+      height: 38px;
+      place-items: center;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      color: #071426;
+      font-family: "Playfair Display", serif;
+      font-weight: 800;
+    }
+
+    .brand-name span {
+      color: var(--gold);
+    }
+
+    main {
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 50% 5%, rgba(43, 119, 190, .24), transparent 49%),
+        linear-gradient(180deg, #0d2038 0%, var(--background) 86%);
+    }
+
+    .hero {
+      width: min(100% - 40px, 1160px);
+      margin: 0 auto;
+      padding: 96px 0 84px;
+      text-align: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      padding: 8px 15px;
+      border: 1px solid rgba(102, 184, 255, .36);
+      border-radius: 999px;
+      background: rgba(102, 184, 255, .08);
+      color: var(--gold);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 17px 0 20px;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(2.7rem, 7vw, 4.65rem);
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: -.035em;
+    }
+
+    h1 span {
+      display: block;
+      color: var(--gold);
+    }
+
+    .intro {
+      max-width: 690px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: clamp(1rem, 2vw, 1.12rem);
+      line-height: 1.8;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 13px;
+      margin-top: 32px;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 56px;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 0 25px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      color: #fff;
+      font-weight: 700;
+      text-decoration: none;
+      transition: transform .18s ease, filter .18s ease, background .18s ease;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      filter: brightness(1.08);
+    }
+
+    .button-primary {
+      background: var(--whatsapp);
+    }
+
+    .button-secondary {
+      border-color: var(--gold);
+      background: transparent;
+      color: var(--gold);
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 18px;
+      max-width: 760px;
+      margin: 48px auto 0;
+      padding-top: 35px;
+      border-top: 1px solid rgba(102, 184, 255, .18);
+    }
+
+    .stat strong {
+      display: block;
+      color: var(--gold);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      line-height: 1.2;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: .74rem;
+      font-weight: 600;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+    }
+
+    .details {
+      padding: 64px 20px 76px;
+      background: #050d18;
+    }
+
+    .details-card {
+      max-width: 830px;
+      margin: 0 auto;
+      padding: 28px;
+      border: 1px solid rgba(102, 184, 255, .28);
+      border-left: 3px solid var(--gold);
+      border-radius: 9px;
+      background: var(--surface);
+    }
+
+    .details-card h2 {
+      margin: 0 0 13px;
+      color: var(--gold);
+      font-size: .82rem;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .details-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .details-card .button {
+      min-height: 48px;
+      margin-top: 22px;
+      padding: 0 21px;
+      font-size: .92rem;
+    }
+
+    footer {
+      padding: 20px;
+      color: #7f92ab;
+      font-size: .8rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .announcement {
+        font-size: .76rem;
+      }
+
+      .hero {
+        padding: 72px 0 64px;
+      }
+
+      .eyebrow {
+        font-size: .67rem;
+        letter-spacing: .06em;
+      }
+
+      .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        row-gap: 26px;
+        max-width: 420px;
+      }
+
+      .details {
+        padding: 44px 16px 54px;
+      }
+
+      .details-card {
+        padding: 22px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="announcement">
+    📺 Entretenimento para curtir quando e onde quiser —
+    <a href="https://wa.me/5562994492619?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20os%20canais">fale com a gente pelo WhatsApp</a>
+  </div>
+
+  <div class="brand" aria-label="EasyIptv">
+    <span class="brand-mark" aria-hidden="true">E</span>
+    <span class="brand-name">Easy<span>Iptv</span></span>
+  </div>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="eyebrow"><span aria-hidden="true">⚡</span> Canais, filmes e séries em um só lugar</div>
+      <h1 id="hero-title"><span>EasyIptv:</span>A sua programação favorita</h1>
+      <p class="intro">
+        Curta canais ao vivo, filmes e séries com praticidade. Uma experiência de entretenimento
+        completa para assistir aos seus conteúdos favoritos em um só lugar.
+      </p>
+      <div class="actions">
+        <a class="button button-primary" href="https://wa.me/5562994492619?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20os%20canais">
+          <span aria-hidden="true">💬</span> Contratar pelo WhatsApp
+        </a>
+      </div>
+
+      <div class="stats" aria-label="Destaques">
+        <div class="stat"><strong>18.000+</strong><span>Canais ao vivo</span></div>
+        <div class="stat"><strong>50.000+</strong><span>Filmes e séries</span></div>
+        <div class="stat"><strong>4K HDR</strong><span>Qualidade máxima</span></div>
+        <div class="stat"><strong>24h</strong><span>Suporte em PT</span></div>
+      </div>
+    </section>
+  </main>
+
+  <section class="details" id="conteudo" aria-labelledby="details-title">
+    <div class="details-card">
+      <h2 id="details-title">Diversão para todos os momentos</h2>
+      <p>
+        Reúna esportes, notícias, entretenimento, filmes e séries em uma programação feita para
+        você. Quer saber mais ou contratar? Chame no WhatsApp e tire suas dúvidas.
+      </p>
+      <a class="button button-primary" href="https://wa.me/5562994492619?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20os%20canais">
+        <span aria-hidden="true">💬</span> Falar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <footer>EasyIptv · Fale com a gente pelo WhatsApp</footer>
+</body>
+</html>
